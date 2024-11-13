@@ -1,6 +1,6 @@
-# AIgenda
+# LuMatch
 
-AIgenda is an AI-powered event recommendation system that matches professionals with relevant AI events based on their CV profile. It automatically scrapes events from various sources and creates personalized event schedules.
+LuMatch is an AI-powered event recommendation system that matches professionals with relevant AI events (from lu.ma) based on their CV profile. It automatically scrapes events from various sources and creates personalized event schedules.
 
 ## Features
 
@@ -22,6 +22,6 @@ AIgenda is an AI-powered event recommendation system that matches professionals 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com
+git clone https://github.com/rcisneros99/lumatch.git
 ```
 
