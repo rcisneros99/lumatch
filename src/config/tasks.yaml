@@ -1,0 +1,38 @@
+read_profile:
+  description: >-
+    Read and analyze the CV file to extract skills, experiences, and create a professional profile.
+    IMPORTANT: The CV file is in TXT format (containing LaTeX content).
+    
+    Use the provided FileReadTool to read the CV content, then analyze it to extract:
+    - Professional experience
+    - Skills and technologies
+    - Education
+    - Key achievements
+    - Career goals and preferences
+  agent: profiler
+  expected_output: >-
+    A detailed analysis of the CV including skills, experiences, and professional profile
+    organized in clear sections, ignoring LaTeX formatting commands.
+
+scrape_website:
+  description: >-
+    Using the web_scrape tool, access https://lu.ma/sf and extract information
+    about events happening in the city.
+  agent: scraper
+  expected_output: >-
+    A list of events with their details, including date, time, location, and description.
+
+summarize:
+  description: >-
+    Using the information from the CV analysis and the events list, create a personalized
+    schedule of recommended events that match the person's profile and interests.
+  agent: summarizer
+  expected_output: >-
+    A markdown-formatted document that says:
+    - A short paragraph highlighting the most important/relevant events for this person and why
+    - A schedule of at least 7 recommended events in the following format:
+    Date: MM/DD/YYYY
+    Time: hh:mm
+    Event: [event name]
+    Description: [brief description (1-2 sentences)]
+    Why it's relevant: [short explanation of why this event matches the person's profile]

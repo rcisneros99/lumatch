@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "app_1"
+version = "0.1.0"
+description = "first try using agentstack"
+authors = ["rafa"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+agentops = "^0.3.12"
+crewai = "^0.63.6"
+crewai-tools= "0.12.1"
+python-dotenv="1.0.1"
+
+[project.scripts]
+app_1 = "app_1.main:run"
+run_crew = "app_1.main:run"
+train = "app_1.main:train"
+replay = "app_1.main:replay"
+test = "app_1.main:test"
